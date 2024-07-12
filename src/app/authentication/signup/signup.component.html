@@ -1,0 +1,32 @@
+<form>
+    <h4 class="text-center">SignUp</h4>
+    <div class="form-group mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+    </div>
+    <div class="form-group  mb-3">
+        <label for="email" class="form-label">Email address:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+    </div>
+    <div class="form-group  mb-3">
+        <label for="role" class="form-label">Role:</label>
+        <select class="form-select" id="role">
+            <option>Select role</option>
+            <option>User</option>
+        </select>
+    </div>
+    <div class="form-group  mb-3">
+        <label for="password" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+    </div>
+    <div class="form-group mb-3">
+        <label for="formFile" class="form-label">Upload Picture</label>
+        <input class="form-control" id="formFileSm" type="file">
+    </div>
+    <div class="text-center">
+        <i class="text-secondary">Back to </i> <a routerLink="/auth/login">Login</a>
+    </div>
+    <div class="row">
+        <button type="submit" class="btn signupbtn my-3">Sign Up</button>
+    </div>
+</form>

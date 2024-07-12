@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg navbar-light container-fluid">
+    <div class="container-fluid">
+        <div class="d-flex">
+            <i class="fa-solid fa-border-all fa-2x mt-2 me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></i><a class="navbar-brand d-flex align-items-center fw-bold logo " routerLink="/"><i class="fa-brands fa-product-hunt fa-2x  mx-1"></i><span class="logoname">Work Details System</span></a>
+        </div>
+        <div class="ms-auto order-lg-last ">
+            <img src="../../../assets/profileImage2.jpg"  class="rounded-circle mx-sm-2 mx-md-2 m-0" width="50px" height="45px" data-bs-toggle="modal" data-bs-target="#modalId"><span class="fw-bold me-3 username" data-bs-toggle="modal" data-bs-target="#modalId">Hetvi Parekh</span>
+            <!-- Modal Body -->
+             <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-dark" id="modalTitleId">
+                                Update Profile
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row justify-content-center">
+                                <label for="imageUpload">
+                                    <img src="" class="rounded-circle" height="120px"
+                                        style="width: 150px; cursor: pointer;" #previewImage>
+                                </label>
+                                <input type="file" id="imageUpload" style="display: none;"/>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Close
+                            </button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <button class="btn  btn-outline-light logoutbtn"><i class="fa-solid fa-right-from-bracket  mx-1" type="button" ></i>Logout</button>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/" routerLinkActive="active" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" routerLink="/addproduct" routerLinkActive="active">Add Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/addcategory" routerLinkActive="active">Add Category</a>
+                </li>
+                <li>
+                    <button class="btn btn-sm  btn-outline-light logoutlink"><i class="fa-solid fa-right-from-bracket  mx-1" type="button"></i>Logout</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+ 
