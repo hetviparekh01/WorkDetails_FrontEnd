@@ -18,7 +18,15 @@ $secondary: white;
   
     --bs-accordion-bg:none;
 }
-.navbar-nav .nav-link.active {
-    color: $primary;
-    font-weight: bolder;
+
+.offcanvas{
+    background-color: #f8f9fa;
+    --bs-offcanvas-width: 250px;
+}
+.dropdwnlink.active{
+    color: $secondary;
+        font-weight: bolder;
+}
+.dashboardlink{
+    text-decoration: none;
 }
